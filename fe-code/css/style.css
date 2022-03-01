@@ -81,7 +81,6 @@ section {
     font-size: 16px;
   }
 }
-
 /* ************************************************************
 ***************************************************************
 --- Navbar ---
@@ -115,7 +114,6 @@ section {
   width: 180px;
   margin-left: 20px;
 }
-
 .input-group > .form-control {
   height: 70px;
   background: #FFF;
@@ -210,6 +208,8 @@ section {
   line-height: 30px;
 }
 
+.left-class{width:50%; float:left}
+.right-class{width:50%; float:right}
 .list-item {
   margin-bottom: 28px;
 }
@@ -315,9 +315,6 @@ section {
 }
 
 @media (max-width: 991px) {
-  .result {
-    min-height: 512px;
-  }
   .result-avatar {
     width: 63px;
     height: 63px;
@@ -358,7 +355,13 @@ section {
   .search-again {
     padding: 40px 0;
   }
+  .left-class{width: 100%;}
+  .right-class{width:100%; float: left;}
 }
+
+/* @media (max-width: 356){
+  .loader-div{margin: 120px;}
+} */
 
 /* ************************************************************
 ***************************************************************
@@ -367,6 +370,7 @@ section {
 ************************************************************ */
 
 .footer {
+  float: left;
   padding: 16px 0;
 }
 
