@@ -114,6 +114,9 @@ section {
   width: 180px;
   margin-left: 20px;
 }
+.btn-search-hover{background-color: #F2DA56; background-image: none;}
+.btn-form-submit:focus, .btn-form-submit:active{background-color: #F6BC25;}
+
 .input-group > .form-control {
   height: 70px;
   background: #FFF;
