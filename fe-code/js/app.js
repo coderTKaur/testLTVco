@@ -1,6 +1,11 @@
 $(document).ready(function () {
+  $('#wait').hide();
 
+  $("#btn-search").hover(function () {
+    $(this).toggleClass("btn-search-hover");
+  });
   $("#btn-search").on("click", function (e) {
+    $("#btn-search").addClass("active disabled");
     e.preventDefault();
     localStorage.clear(); //Clears storage for next request
     email = $('input[type="text"]').val().toLowerCase();
