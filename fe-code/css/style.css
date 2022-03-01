@@ -62,6 +62,13 @@ section {
   color: #4A4A4A !important;
 }
 
+.loader-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 @media (max-width: 991px) {
   h1 {
     font-size: 48px;
@@ -318,6 +325,8 @@ section {
 }
 
 @media (max-width: 991px) {
+  .loader-div{margin: 120px;}
+  .result {min-height: 512px;}
   .result-avatar {
     width: 63px;
     height: 63px;
@@ -330,6 +339,7 @@ section {
 }
 
 @media (max-width: 767px) {
+  .loader-div{margin: 50px;}
   .result {
     min-height: 306px;
   }

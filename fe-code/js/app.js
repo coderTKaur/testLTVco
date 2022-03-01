@@ -23,9 +23,15 @@ $(document).ready(function () {
       const proxyurl = "";
       const url =
         'https://ltv-data-api.herokuapp.com/api/v1/records.json?email=' + email;
+      $('.above-the-fold').hide();
+      $('.features').hide();
+      $('.result').hide();
+      $('.search-again').hide();
+      $('#wait').show();
       fetch(proxyurl + url)
         .then((response) => response.text())
         .then(function (contents) {
+          $('#wait').hide();
           localStorage.setItem("userObject", contents);
           window.location.href = "result.html";
         })
