@@ -17,7 +17,7 @@
         </a>
         <div>
           <img src="img/icn_search.svg" width="23" height="23" alt="Search">
-          <img class="ml-4" src="img/icn_person.svg" alt="Profile">
+          <img class="ml-4" src="img/icn_person.svg" width="23" height="23" alt="Profile">
         </div>
       </div>
     </nav>
@@ -76,8 +76,13 @@
           <h2 class="mb-4 mb-md-5"><strong>Try Again</strong> - Make a new search</h2>
         </div>
         <form>
+          <div class="search-type">
+            <div class="search-static">TYPE OF SEARCH: </div>
+            <div id="search-by-eml" class="search-type-eml">EMAIL ADDRESS</div>
+            <div id="search-by-phn" class="search-type-eml">PHONE NUMBER</div>
+          </div>
           <div class="input-group">
-            <input class="form-control" type="text" name="email" placeholder="Enter an Email Address" />
+            <input class="form-control" type="text" name="email" id="email" placeholder="Enter an Email Address" />
             <p class="error-msg">Please enter a valid email address</p>
             <button id="btn-search" class="btn btn-form-submit text-uppercase" type="submit">Go!</button>
           </div>

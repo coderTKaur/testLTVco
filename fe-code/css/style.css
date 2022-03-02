@@ -49,7 +49,7 @@ h5 {
   font-weight: bold;
   color: #004A80;
 }
-
+.mr-5{margin: 5px;}
 section {
   padding: 40px 0 52px;
 }
@@ -67,6 +67,27 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.search-type{
+  margin: 15px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.search-type-eml, .search-type-phn{
+  border: 3px solid #F6BC25;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+}
+.search-type-active{
+  background-color: #F6BC25;
+  transition: all 0.5s;
 }
 
 @media (max-width: 991px) {
@@ -90,6 +111,8 @@ section {
   .input-group.error .error-msg{
     bottom: 30px!important;
   }
+  .search-type{justify-content: center;}
+  .search-static{display: none;}
 }
 /* ************************************************************
 ***************************************************************
