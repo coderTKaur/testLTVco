@@ -85,7 +85,7 @@ $(document).ready(function () {
     var x;
     regEx = searchQuery === 'email'
     ? /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
-    : /^[0-9]+$/;
+    : /^[0-9]{10}$/;
     if (query.match(regEx)) {
       x = true;
     } else {
